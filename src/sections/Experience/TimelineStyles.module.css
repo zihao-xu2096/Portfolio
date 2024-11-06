@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px; 
+  width: 45%; 
+  position: relative;
+}
+
+.date {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content {
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--text-color);
+  transform: translateX(-50%);
+}
+
+.left {
+  left: 0;
+  text-align: right;
+  padding-left: 4%; /* Padding to push events away from timeline */
+}
+
+.right {
+  left: 50%;
+  text-align: left;
+  padding-left: 1%; /* Padding to push the events away from timeline */
+}
+
+.left .content {
+  margin-right: auto;
+}
+
+.right .content {
+  margin-left: auto;
+}
+
+.companyLink {
+  color: inherit; 
+  text-decoration: underline;
+  text-decoration-color: var(--text-color); 
+}
