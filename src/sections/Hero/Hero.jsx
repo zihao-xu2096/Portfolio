@@ -1,15 +1,15 @@
-import styles from './HeroStyles.module.css';
+import githubDark from '../../assets/github-dark.svg';
+import githubLight from '../../assets/github-light.svg';
+import RESUME from '../../assets/HarrysResume.pdf';
+import linkedinDark from '../../assets/linkedin-dark.svg';
+import linkedinLight from '../../assets/linkedin-light.svg';
+import moon from '../../assets/moon.svg';
 import heroImg from '../../assets/profile-1.jpeg';
 import sun from '../../assets/sun.svg';
-import moon from '../../assets/moon.svg';
-import twitterLight from '../../assets/twitter-light.svg';
 import twitterDark from '../../assets/twitter-dark.svg';
-import githubLight from '../../assets/github-light.svg';
-import githubDark from '../../assets/github-dark.svg';
-import linkedinLight from '../../assets/linkedin-light.svg';
-import linkedinDark from '../../assets/linkedin-dark.svg';
-import RESUME from '../../assets/HarrysResume.pdf';
+import twitterLight from '../../assets/twitter-light.svg';
 import { useTheme } from '../../common/ThemeContext';
+import styles from './HeroStyles.module.css';
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -48,9 +48,6 @@ function Hero() {
           <a href="https://github.com/zihao-xu2096" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>          
-          <a href="https://twitter.com/" target="_blank">
-            <img src={twitterIcon} alt="Twitter icon" />
-          </a>
         </span>
         <p className={styles.description}>
           Fifth and final year undergraduate student at the University of Toronto studying Computer Science, Statisics and Mathematics with a passion for software development.
