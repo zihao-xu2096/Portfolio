@@ -24,6 +24,10 @@
 .date {
   font-weight: bold;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-color); /* Ensure dates use the text color variable */
 }
 
 .content {
@@ -65,7 +69,7 @@
 }
 
 .companyLink {
-  color: inherit; 
+  color: inherit;
   text-decoration: underline;
-  text-decoration-color: var(--text-color); 
+  text-decoration-color: var(--text-color);
 }
